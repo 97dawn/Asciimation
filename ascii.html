@@ -1,0 +1,45 @@
+<!--Doeun Kim
+doeun.kim@stonybrook.edu-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>ASCIImation</title>
+        <link rel="stylesheet" href="ascii.css">
+        <script src="https://www.cs.washington.edu/education/courses/cse190m/12sp/homework/6/animations.js"></script>
+        <script src="ascii.js"></script>
+        <link rel="icon" href="favicon.gif">
+    </head>
+    <body>
+        <textarea rows="20" cols="80" id="textarea"></textarea>
+        <div>
+            <fieldset>
+                <legend>Play Controls:</legend>
+                <button type="button" id="start">Start</button>
+                <button type="button" id="stop">Stop</button>
+            </fieldset>
+            <fieldset>
+                <legend>Animation:</legend>
+                <select id="animation">
+                    <option selected="selected" value="blank">Blank</option>
+                    <option value="exercise">Exercise</option>
+                    <option value="juggler">Juggler</option>
+                    <option value="bike">Bike</option>
+                    <option value="dive">Dive</option>
+                    <option value="custom">Custom</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Size:</legend>
+                <input type="radio" id="small" value="7pt">Small
+                <input checked="checked" type="radio" id="medium" value="12pt">Medium
+                <input type="radio" id="large" value="24pt">Large
+            </fieldset>
+        </div>
+        <div class="validators">
+            <a href="http://validator.w3.org/check/referer"><img src="w3c-html.png" alt="HTML Validator"></a>
+            <a href="http://jigsaw.w3.org/css-validator/check/referer"><img src="w3c-css.png" alt="CSS Validator"></a>
+            <a href="https://webster.cs.washington.edu/jslint/"><img src="w3c-js.jpg" alt="JS Validator"></a>
+        </div>
+    </body>
+</html>
